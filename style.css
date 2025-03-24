@@ -1,0 +1,23 @@
+body {
+    background-color: #f3f3f3;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+div {
+    padding: 5%;
+    border: black 1px solid;
+    border-radius: 10px;
+    height: 50%;
+    width: 30%;
+    background-color: #bd8a2d;
+    margin: 0 auto;
+    margin-top: 16%;
+}
+
+/* . {
+    display: inline-block;
+} */
+
