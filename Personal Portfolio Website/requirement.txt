@@ -1,0 +1,25 @@
+Home screen
+    navbar
+        Home
+        projects
+        resume
+        contact - optional
+        skills
+
+    contain details about me with photo
+    grid view for projects with transition/animation of appearance
+    contact details
+each screen has the path tracker like home>project1.html where we can navigate back also
+
+project screen 
+    project show by inbuilt code viewer with output of it as preview from github pages
+    comment section for feedback from ananomous users
+
+contact optional
+
+resume screen
+    pdf directly in pdf viewer or drive link
+
+skills screen  
+    in this screen skills with current progress (eg completed or learning) and the topics learned in these skills with a dropdown list like feature.
+
