@@ -22,13 +22,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
-
+    flex-wrap: wrap;
 } 
 
 nav ul li a {
@@ -51,37 +52,50 @@ nav button a {
     text-decoration: none;
 }
 
-
 #about {
-    border: 3px solid red;
+    border: 2px solid red;
     border-radius: 5px;
-    margin: 5% 1%;
-    padding: 2% 2%;
-    background-color: green;
+    margin: 3rem 1rem;
+    padding: 1rem;
+    background-color: aquamarine;
 }
 
 .about-content {
-    background-color: cadetblue;
     display: flex;
-    flex-wrap: wrap;
+    background-color: aliceblue;
+    padding: .5%;
+    gap: .4rem;
+    align-items: start;
 }
 
 .about-text {
-    width: 70%;
+    background-color: aqua;
     text-align: justify;
-    padding: 5px;
-    margin: 2px;
-    background-color: red;
+    font-size: 1rem;
+    flex: 1;
 }
 
+.about-text p {
+  margin-bottom: 0.5rem; /* or less if needed */
+}
+
+
 .about-photo {
-    width: 28%;
-    height: auto;
-    margin: 5px auto;
-    padding: auto;
-    
+    background-color: red;
+    /* height: 170px; */
+    padding: .3rem;
+    /* width: 160px; */
+    width: 13%;
+    min-width: 100px;
+    /* flex-shrink: 0; */
+    margin-left: 1rem;
 }
+
 .about-photo img {
-    width: 98%;
-    height: 98%;    
+    /* height: 100%; */
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 5px; */
 }
+
