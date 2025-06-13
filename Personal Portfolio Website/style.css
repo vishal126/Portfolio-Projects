@@ -9,7 +9,6 @@ body {
     padding: 8px;
     background-color: yellow;
     height: auto;
-    width: auto;
     font-family: Arial, sans-serif;
 }   
 
@@ -99,3 +98,117 @@ nav button a {
     /* border-radius: 5px; */
 }
 
+.projects {
+    background-color: brown;
+    display: grid;
+    width: 90%;
+    height: auto;
+    gap: 2% 5%;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: .2rem;
+    border: 2px solid blue;
+    border-radius: 6px;
+    justify-items: center;
+    align-items: start;
+}
+
+.project-card {
+    background-color: blueviolet;
+    border: 2px solid black;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: .2rem;
+    padding: .1rem;
+}
+
+.project-card-photo {
+    background-color: aqua;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+
+.project-card-photo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.project-card-about {
+    background-color: aliceblue;
+    margin: .3rem;
+    padding: .2rem;
+    width: 96%;
+    border: 4px solid black;
+    border-radius: 5px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.project-card-about p {
+  text-align: left;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+
+.project-card-tech-stack {
+    margin: .3rem;
+    background-color: aqua;
+    padding: .1rem;
+}
+
+.project-card ul {
+    background-color: bisque;
+    padding: .2rem;
+    border: 3px solid rgb(247, 0, 255);
+    border-radius: 5px;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-card ul li {
+    border: 2px solid black;
+    padding: .2rem .8rem;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+.project-card-button {
+    background-color: blue;
+    padding: .3rem;
+    margin: .2rem;
+}
+
+.project-card-button button{
+    padding: .4rem 1rem;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid fuchsia;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.project-card-button button:hover {
+    background-color: fuchsia;
+    color: white;
+    cursor: pointer;
+}
