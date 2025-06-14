@@ -36,7 +36,14 @@ nav ul li a {
     color: black;
     font-weight: bold;
 }
+nav ul li:hover {
+    padding: .2rem;
+    font-size: 1.2rem;
+    color: tomato;
+    text-decoration: underline;
+    background-color: rgb(37, 223, 16);
 
+}
 /* nav button {
     background-color: tomato;
     font-size: large;
