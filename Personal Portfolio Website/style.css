@@ -37,19 +37,29 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav button {
+/* nav button {
     background-color: tomato;
     font-size: large;
     margin: 10px;
     padding: 10px;
     border: none;
     border-radius: 5px;
-}
+} */
 
-nav button a {
+/* nav button a {
     color: white;
     text-decoration: none;
+} */
+
+.nav-button {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
+
 
 #about {
     border: 2px solid red;
@@ -78,6 +88,25 @@ nav button a {
   margin-bottom: 0.5rem; /* or less if needed */
 }
 
+.about-text-buttons {
+    background-color: rgb(32, 220, 41);
+}
+.about-text-buttons button {
+    background-color: rgb(111, 0, 255);
+    color: rgb(232, 93, 6);
+    font-size: large;
+    padding: .8rem;
+    margin: .2rem;
+    border: 3px solid brown;
+    border-radius: 10px;
+}
+
+.about-text-buttons button:hover {
+    color: white;
+    cursor: pointer;
+    background-color: brown;
+    border: 3px solid rgb(9, 12, 13);
+}
 
 .about-photo {
     background-color: red;
@@ -120,8 +149,13 @@ nav button a {
     padding: 1rem;
     border-radius: 14px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
 }
-
+.project-card.highlighted {
+  background-color: #fff3cd; /* light yellow */
+  box-shadow: 0 0 15px 4px rgba(255, 193, 7, 0.8); /* golden shadow */
+  border-color: #0d0a02;
+}
 .project-card h3 {
     text-align: center;
     font-size: 1.6rem;
@@ -214,6 +248,42 @@ nav button a {
     cursor: pointer;
 }
 
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 3px solid #555;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: fuchsia;
+}
+
+
+
 @media screen and (max-width: 480px) {
     nav {
         display: flex;
@@ -239,8 +309,14 @@ nav button a {
         border: 2px solid black;
         border-radius: 5px;
     }
-    .button-nav-section button{
-        margin: 0 .5rem;
+    .button-nav-section{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: .3rem;
+        margin-bottom: .3rem;
+    }
+    .button-nav-section a {
+        margin: .2rem;
     }
     #about {
         margin: 1rem .1rem;
@@ -262,4 +338,16 @@ nav button a {
     .projects {
         justify-items: center;
     }
+}
+
+@media screen and (min-width: 481px) and (max-width: 675px) {
+    nav {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 646px) {
+    .projects {
+        justify-items: center;
+    }    
 }
