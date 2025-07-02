@@ -1,143 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills Accordion</title>
+  <style>
+    .main-page-btn {
+      text-decoration: none;
+      font-size: large;
+      border: 2px solid;
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: rgb(43, 226, 202);
+    }
+    .main-page-btn:hover {
+      background-color: blue;
+      color: white;
+    }
+    .skill {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 1rem 0;
+      padding: 1rem;
+    }
+
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .subtopics {
+      display: none;
+      margin-top: 0.5rem;
+      padding-left: 1rem;
+    }
+
+    .subtopics.active {
+      display: block;
+    }
+
+    .certificate {
+      font-size: 0.9rem;
+    }
+
+    #single-toggle {
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>skills</th>
-            </tr>
-            <tr>
-                <th>name</th>
-                <th>topics covered</th>
-                <th>practice link</th>
-                <th>certificate link</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="10">Html</td>
-                <td>Introduction</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Elements</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>tags</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>attributes</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>lists</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>images</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>videos</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Linking File</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Tables</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Semantic HTML</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="12">CSS</td>
-                <td>Anatomy</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Selectors</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Pseudo Classes</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Visual RULES</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Box Model</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Overflow</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Display and Positioning</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Color</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Typography</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Grids</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Flex</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Media Queries</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="10">GitHub</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+  <br>
+  <a href="./index.html" class="main-page-btn">Back to main page</a>
+  <br>
+  <br>
+  <label>
+    <input type="checkbox" id="single-toggle" />
+    Allow only one skill open at a time
+  </label>
+
+  <div class="skill">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      HTML
+      <span class="certificate">
+        <a href="https://www.codecademy.com/profiles/VishalMenariya/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7" target="_blank">Certificate</a>
+      </span>
+    </div>
+    <div class="subtopics">
+      <ul>
+        <li>Introduction</li>
+        <li>Elements</li>
+        <li>Tags</li>
+        <li>Attributes</li>
+        <li>Lists</li>
+        <li>Images</li>
+        <li>Videos</li>
+        <li>Linking Files</li>
+        <li>Tables</li>
+        <li>Semantic HTML</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-header" onclick="toggleSkill(this)">
+      CSS
+      <span class="certificate">No certificate</span>
+    </div>
+    <div class="subtopics">
+      <ul>
+        <li>Anatomy</li>
+        <li>Selectors</li>
+        <li>Pseudo Classes</li>
+        <li>Visual Rules</li>
+        <li>Box Model</li>
+        <li>Overflow</li>
+        <li>Display & Positioning</li>
+        <li>Color</li>
+        <li>Typography</li>
+        <li>Grids</li>
+        <li>Flex</li>
+        <li>Media Queries</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleSkill(header) {
+      const singleOpen = document.getElementById("single-toggle").checked;
+      const current = header.nextElementSibling;
+
+      if (singleOpen) {
+        document.querySelectorAll('.subtopics').forEach(section => {
+          if (section !== current) section.classList.remove('active');
+        });
+      }
+
+      current.classList.toggle('active');
+    }
+
+    // Handle checkbox activation logic on first tick
+    document.getElementById("single-toggle").addEventListener("change", function () {
+      if (this.checked) {
+        // Only keep the first open, close others
+        const all = Array.from(document.querySelectorAll('.subtopics'));
+        const open = all.find(section => section.classList.contains("active"));
+        all.forEach((section, i) => {
+          if (section !== open && open !== undefined) {
+            section.classList.remove("active");
+          }
+        });
+      }
+    });
+  </script>
+
 </body>
 </html>

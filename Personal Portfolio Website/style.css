@@ -7,13 +7,13 @@
 body {
     margin: 8px;
     padding: 8px;
-    background-color: yellow;
+    /* background-color: yellow; */
     height: auto;
     font-family: Arial, sans-serif;
 }   
 
 header {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     padding: 20px;
     text-align: center;
 }
@@ -33,7 +33,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    /* color: black; */
     font-weight: bold;
 }
 nav ul li:hover {
@@ -41,7 +41,7 @@ nav ul li:hover {
     font-size: 1.2rem;
     color: tomato;
     text-decoration: underline;
-    background-color: rgb(37, 223, 16);
+    /* background-color: rgb(37, 223, 16); */
 
 }
 /* nav button {
@@ -73,19 +73,19 @@ nav ul li:hover {
     border-radius: 5px;
     margin: 3rem 1rem;
     padding: 1rem;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .about-content {
     display: flex;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     padding: .5%;
     gap: .4rem;
     align-items: start;
 }
 
 .about-text {
-    background-color: aqua;
+    /* background-color: aqua; */
     text-align: justify;
     font-size: 1rem;
     flex: 1;
@@ -96,7 +96,7 @@ nav ul li:hover {
 }
 
 .about-text-buttons {
-    background-color: rgb(32, 220, 41);
+    /* background-color: rgb(32, 220, 41); */
 }
 .about-text-buttons button {
     background-color: rgb(111, 0, 255);
@@ -116,7 +116,7 @@ nav ul li:hover {
 }
 
 .about-photo {
-    background-color: red;
+    /* background-color: red; */
     /* height: 170px; */
     padding: .3rem;
     /* width: 160px; */
@@ -135,7 +135,7 @@ nav ul li:hover {
 }
 
 .projects {
-    background-color: brown;
+    /* background-color: brown; */
     display: grid;
     /* width: 90%; */
     height: auto;
@@ -150,12 +150,12 @@ nav ul li:hover {
 }
 
 .project-card {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     border: 2px solid black;
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 14px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     transition: all 0.4s ease-in-out;
 }
 .project-card.highlighted {
@@ -173,7 +173,7 @@ nav ul li:hover {
 }
 
 .project-card-photo {
-    background-color: aqua;
+    /* background-color: aqua; */
     max-width: 240px;
     width: 100%;
     margin: 0 auto;
@@ -191,7 +191,7 @@ nav ul li:hover {
 
 
 .project-card-about {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     margin: .3rem;
     padding: .2rem;
     width: 96%;
@@ -210,12 +210,12 @@ nav ul li:hover {
 
 .project-card-tech-stack {
     margin: .3rem;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: .1rem;
 }
 
 .project-card ul {
-    background-color: bisque;
+    /* background-color: bisque; */
     padding: .2rem;
     border: 3px solid rgb(247, 0, 255);
     border-radius: 5px;
@@ -233,7 +233,7 @@ nav ul li:hover {
 }
 
 .project-card-button {
-    background-color: blue;
+    /* background-color: blue; */
     padding: .3rem;
     margin: .2rem;
 }
